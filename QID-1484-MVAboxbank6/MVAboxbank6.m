@@ -5,8 +5,8 @@ clc
 
 % load data
 x  = load('bank2.dat');
-m1 = mean(x(1:100,6))
-m2 = mean(x(101:200,6))
+m1 = mean(x(1:100,6));
+m2 = mean(x(101:200,6));
 
 % plot
 hold on

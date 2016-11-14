@@ -11,5 +11,6 @@ See also: MVAandcur, MVAandcur2, MVAhisbank1, MVAhisbank2
 Author: Till Grossmass, Jorge Patron, Vladimir Georgescu, Song Song
 
 Submitted: Mon, September 15 2014 by Awdesch Melzer
+Submitted{Matlab}: Mon, November 14 2016 by Lily Medina
 
 Datafiles: bank2.dat

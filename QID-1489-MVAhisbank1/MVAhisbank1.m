@@ -1,43 +1,21 @@
-% ---------------------------------------------------------------------
-% Book:         MVA
-% ---------------------------------------------------------------------
-% Quantlet:     MVAhisbank1
-% ---------------------------------------------------------------------
-% Description:  MVAhisbank1 computes 4 histograms for the diagonal of 
-%               the forged swiss bank notes (bank2.dat). The 
-%               histograms are different w.r.t. their binwidth. 
-% ---------------------------------------------------------------------
-% Usage:        -
-% ---------------------------------------------------------------------
-% Inputs:       None
-% ---------------------------------------------------------------------
-% Output:       Computes 4 histograms for the diagonal of the forged 
-%               swiss bank notes (bank2.dat). The histograms are
-%               different w.r.t. their binwidth. 
-% ---------------------------------------------------------------------
-% Example:      -
-% ---------------------------------------------------------------------
-% Author:       Wolfgang Haerdle, Song Song, Vladimir Georgescu, 
-%               Jorge Patron           
-% ---------------------------------------------------------------------
-
+%% clear variables and close windows
 clear
 close all
 clc
 
-x=load('bank2.dat');      
+%% load data
+x      = load('bank2.dat');      
+x      = x(101:200,6);
+origin = 137.75;
+i      = 0:100;
 
-x=x(101:200,6);
-
-origin=137.75;
-i = 0:100;
-
-% Because origin<min(x), the histogram includes all values
+%% because origin<min(x), the histogram includes all values
 y1 = origin + 0.1*i +   0.05;
 y2 = origin + 0.2*i + 2*0.05;
 y3 = origin + 0.3*i + 3*0.05;
 y4 = origin + 0.4*i + 4*0.05;
 
+%% plot
 subplot(2,2,1) 
 hist(x,y1)
 axis 'auto y'
