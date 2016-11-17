@@ -1,33 +1,22 @@
-% ---------------------------------------------------------------------
-% Book:         MVA
-% ---------------------------------------------------------------------
-% Quantlet:     MVApcp2
-% ---------------------------------------------------------------------
-% Description:  MVApcp2 Computes parallel coordinates plots for variables 
-%               weight and displacement of the car data set.
-% ---------------------------------------------------------------------
-% Usage:        -
-% ---------------------------------------------------------------------
-% Inputs:       none
-% ---------------------------------------------------------------------
-% Output:       Parallel coordinates plots for variables weight and
-%               displacement of the car data set.
-% ---------------------------------------------------------------------
-% Example:      -
-% ---------------------------------------------------------------------
-% Author:       Wolfgang Haerdle, Ji Cao, Song Song, Vladimir Georgescu
-% ---------------------------------------------------------------------
-
+%% clear all variables
 clear
 close all
 clc
 
-z= load('carc.txt');
+%% load data
+x     = load('carc.txt');
+frame = [x(:,8) x(:,11)]; % extracts column 8 and 10/weight and displacement; 
+n     = size(frame,1);
 
-y=(z-(ones(74,1)*min(z)))./(ones(74,1)*(max(z)-min(z)+(max(z)==min(z))));
-y=[y(:,8) y(:,11)];
+%% standarize data
+minf  = ones(n,1)*min(frame); % matrix w. 2 columns: [min(weight),min(displacement]
+maxf  = ones(n,1)*max(frame); % matrix w. 2 columns: [max(weight),max(displacement]
+equal = ones(n,1)*(max(frame)==min(frame)); %  equals 1 if true so that denominator is never equal zero
 
-label={'weight','displacement'};
-parallelcoords(y,'linewidth',1.5,'label', label,'Color','k')
+frame = (frame - minf)./(maxf - minf + equal)
 
+
+%% plot
+label = {'weight','displacement'};
+parallelcoords(frame,'linewidth',1.5,'label', label,'Color','k')
 title('Parallel Coordinate Plot (Car Data)')

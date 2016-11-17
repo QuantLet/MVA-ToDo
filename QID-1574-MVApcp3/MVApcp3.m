@@ -1,33 +1,22 @@
-% ---------------------------------------------------------------------
-% Book:         MVA
-% ---------------------------------------------------------------------
-% Quantlet:     MVApcp3
-% ---------------------------------------------------------------------
-% Description:  MVApcp3 computes parallel coordinates plots for variables 
-%               mileage and weight car data set.
-% ---------------------------------------------------------------------
-% Usage:        -
-% ---------------------------------------------------------------------
-% Inputs:       None
-% ---------------------------------------------------------------------
-% Output:       Parallel coordinates plots for variables mileage
-%               and weight car data set.
-% ---------------------------------------------------------------------
-% Example:      -
-% ---------------------------------------------------------------------
-% Author:       Wolfgang Haerdle, Ji Cao, Song Song, Vladimir Georgescu
-% ---------------------------------------------------------------------
-
+%% clear all variables
 clear
 close all
 clc
 
-z= load('carc.txt');
+%% load data
+x = load('carc.txt');
 
-y=(z-(ones(74,1)*min(z)))./(ones(74,1)*(max(z)-min(z)+(max(z)==min(z))));
-y=[y(:,2) y(:,8)];
+frame = [x(:,2) x(:,8)]; % extracts column 2 and 8 
+n     = size(frame,1);
 
-label={'mileage','weight'};
-parallelcoords(y,'linewidth',1.5,'label',label,'Color','k')
+%% standarize data
+minf  = ones(n,1)*min(frame); % matrix w. 2 columns: [min(mileage),min(weight)]
+maxf  = ones(n,1)*max(frame); % matrix w. 2 columns: [max(mileage),max(weight)]
+equal = ones(n,1)*(max(frame)==min(frame)); %  equals 1 if true so that denominator is never equal zero
 
+frame = (frame - minf)./(maxf - minf + equal);
+
+%% plot
+label = {'mileage','weight'};
+parallelcoords(frame,'linewidth',1.5,'label',label,'Color','k')
 title('Parallel Coordinate Plot(Car Data)')

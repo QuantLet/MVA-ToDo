@@ -1,35 +1,21 @@
-% ---------------------------------------------------------------------
-% Book:         MVA
-% ---------------------------------------------------------------------
-% Quantlet:     MVApcp5
-% ---------------------------------------------------------------------
-% Description:  MVApcp5 computes parallel coordinates plots for variables
-%               headroom, rear seat clearance and trunk space of car
-%               data.
-% ---------------------------------------------------------------------
-% Usage:        -
-% ---------------------------------------------------------------------
-% Inputs:       None
-% ---------------------------------------------------------------------
-% Output:       Parallel coordinates plots for variables headroom,
-%               rear seat clearance and trunk space of car data.
-% ---------------------------------------------------------------------
-% Example:      -
-% ---------------------------------------------------------------------
-% Author:       Wolfgang Haerdle, Ji Cao, Song Song, Vladimir Georgescu
-% ---------------------------------------------------------------------
-
+%% clear all variables
 clear
 close all
 clc
+%% load data
+x = load('carc.txt');
 
-z= load('carc.txt');
+frame = x(:,5:7); % extracts column 5 to 7/'headroom','rear seat','trunk space'  
+n     = size(frame,1);
 
-y=(z-(ones(74,1)*min(z)))./(ones(74,1)*(max(z)-min(z)+(max(z)==min(z))));
-y=y(:,5:7);
+%% standarize data
+minf  = ones(n,1)*min(frame); % matrix w. 3 columns: [min(headroom),min(rear seat), min(trunk space)]
+maxf  = ones(n,1)*max(frame); % matrix w. 3 columns: [max(headroom),max(rear seat), max(trunk space)]
+equal = ones(n,1)*(max(frame)==min(frame)); %  equals 1 if true so that denominator is never equal zero
 
-label={'headroom','rear seat','trunk space'};
+frame = (frame - minf)./(maxf - minf + equal)
 
-parallelcoords(y, 'linewidth',1.5, 'label', label,'Color','k');
-
+%% plot
+label = {'headroom','rear seat','trunk space'}
+parallelcoords(frame, 'linewidth',1.5, 'label', label,'Color','k')
 title('Parallel Coordinate Plot (Car Data)')
