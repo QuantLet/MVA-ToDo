@@ -11,6 +11,7 @@ See also: MVAgausscauchy, MVAcltbern2, MVAcauchy, MVAtdis
 Author: Wolfgang K. Haerdle
 
 Submitted: Wed, December 07 2011 by Dedy Dwi Prastyo
+Submitted[Matlab]: Tue, November 22 2016 by Lily Medina
 
 Example: 
 - 1: n=5

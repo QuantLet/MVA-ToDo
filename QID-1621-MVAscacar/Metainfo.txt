@@ -1,12 +1,12 @@
-Name of QuantLet: MVAscabank45
+Name of QuantLet: MVAscacar
 
 Published in: Applied Multivariate Statistical Analysis
 
-Description: Computes a two dimensional scatterplot of X4 vs. X5 (upper inner frame vs. lower) of the Swiss bank notes data.
+Description: Computes a two dimensional scatterplot of mileage and weight from the car data set.
 
 Keywords: data visualization, graphical representation, scatterplot, financial, plot, sas
 
-See also: MVAcorrnorm, MVAregbank, MVAregpull, MVAscabank56, MVAscabank456, MVAscacar, MVAscapull1, MVAscapull2, MVAdraftbank4, MVAdrafthousing, MVAdrafthousingt
+See also: MVAcorrnorm, MVAregbank, MVAregpull, MVAscabank45, MVAscabank56, MVAscabank456, MVAscapull1, MVAscapull2, MVAdraftbank4, MVAdrafthousing, MVAdrafthousingt
 
 Author: Vladimir Georgescu, Jorge Patron, Song Song
 Author[SAS]: Svetlana Bykovskaya
@@ -15,4 +15,4 @@ Submitted: Mon, September 15 2014 by Awdesch Melzer
 Submitted[SAS]: Wen, April 6 2016 by Svetlana Bykovskaya
 Submitted[Matlab]: Tue, November 22 2016 by Lily Medina
 
-Datafile: bank2.dat
+Datafile: carc.txt, carc_sas.txt

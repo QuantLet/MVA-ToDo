@@ -11,6 +11,7 @@ See also: MVAregbank, MVAregpull, MVAscabank45, MVAscabank56, MVAscabank456, MVA
 Author: Vladimir Georgescu, Jorge Patron, Song Song, Awdesch Melzer
 
 Submitted: Mon, September 15 2014 by Awdesch Melzer
+Submitted[Matlab]: Tue, November 22 2016 by Lily Medina
 
 Input: 
 - sig : Covariance matrix
