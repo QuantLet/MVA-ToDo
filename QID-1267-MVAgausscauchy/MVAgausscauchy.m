@@ -1,34 +1,12 @@
-% ----------------------------------------------------------------------------
-% Book:        MVA
-% ----------------------------------------------------------------------------
-% Quantlet:    MVAgausscauchy
-% ----------------------------------------------------------------------------
-% Description: MVAgausscauchy demonstrates the differences of the pdf curves of 
-%              a standard Gaussian distribution and a Cauchy distribution with 
-%              location parameter mu = 0 and scale parameter sigma = 1. 
-% ------------------------------------------------------------------------------
-% Usage:       -
-% ------------------------------------------------------------------------------
-% Inputs:      None
-% ------------------------------------------------------------------------------
-% Output:      Plot that shows that the probability density of the Cauchy 
-%              distribution is much higher than that of the Gaussian in the 
-%              tail part, while in the area around the centre, the probability 
-%              density of the Cauchy distribution is much lower.
-% ------------------------------------------------------------------------------
-% Example:     -
-% ------------------------------------------------------------------------------
-% Author:      Wolfgang Haerdle 20091002; Matlab: Awdesch Melzer 20120228
-% ------------------------------------------------------------------------------
+%% clear variables and close windows
+clear all
+close all
+clc
 
-%clear variables and close windows
-clear all;
-close all;
-clc;
-
-seq = -6:0.02:6;
-cauchy = seq*trnd(1,1);
-fhat = 1./pi./(1+cauchy.^2);
+%% set input
+seq    = -6:0.02:6;
+cauchy = seq*trnd(1,1); 
+fhat   = 1./pi./(1+cauchy.^2);
 % Plot the Cauchy density
 hold on
 plot(seq, fhat, 'r', 'Linewidth',3);

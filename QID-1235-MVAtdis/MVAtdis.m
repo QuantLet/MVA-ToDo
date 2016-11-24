@@ -1,40 +1,21 @@
-% ------------------------------------------------------------------------------
-% Book:        MVA
-% ------------------------------------------------------------------------------
-% Quantlet:    MVAtdis
-% ------------------------------------------------------------------------------
-% Description: MVAtdis plots three probability density functions (left) and  
-%              three cumulative density functions (right) of the t-distribution 
-%              with different degrees of freedom (t3 stands for t-distribution  
-%              with degree of freedom 3, etc.).
-% ------------------------------------------------------------------------------
-% Usage:       -
-% ------------------------------------------------------------------------------
-% Inputs:      None
-% ------------------------------------------------------------------------------
-% Output:      Two plots of pdf (left) and cdf (right) of t-distributions.              
-% ------------------------------------------------------------------------------
-% Example:     -
-% ------------------------------------------------------------------------------
-% Author:      Wolfgang Haerdle 20091002; Matlab: Awdesch Melzer 20120229
-% ------------------------------------------------------------------------------
 
-%clear variables and close windows
-clear all;
-close all;
-clc;
+%% clear variables and close windows
+clear all
+close all
+clc
 
+%% set input
 xx = -5:0.1:5;
 
-tpdf3 = pdf('T',xx,3);
-tpdf6 = pdf('T',xx,6);
+tpdf3  = pdf('T',xx,3);
+tpdf6  = pdf('T',xx,6);
 tpdf30 = pdf('T',xx,30);
 
-tcdf3 = cdf('T',xx,3);
-tcdf6 = cdf('T',xx,6);
+tcdf3  = cdf('T',xx,3);
+tcdf6  = cdf('T',xx,6);
 tcdf30 = cdf('T',xx,30);
 
-
+%% plot
 subplot(1,2,1)
 hold on
 box on

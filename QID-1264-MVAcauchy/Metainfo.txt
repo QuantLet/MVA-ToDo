@@ -11,3 +11,4 @@ See also: MVAcltbern, MVAcltbern2, MVAgausscauchy, MVAtdis
 Author: Wolfgang K. Haerdle
 
 Submitted: Wed, September 07 2011 by Awdesch Melzer
+Submitted[Matlab]: Wed, November 23 2016 by Lily Medina

@@ -11,3 +11,4 @@ See also: MVAghdis, MVAghdistail
 Author: Wolfgang K. Haerdle
 
 Submitted: Sun, January 29 2012 by Dedy Dwi Prastyo
+Submitted[Matlab]: Wed, November 23 2016 by Lily Medina

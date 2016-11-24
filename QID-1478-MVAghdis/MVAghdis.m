@@ -1,37 +1,17 @@
-% ------------------------------------------------------------------------------
-% Book:        MVA
-% ------------------------------------------------------------------------------
-% Quantlet:    MVAghdis
-% ------------------------------------------------------------------------------
-% Description: MVAghdis plots three probability density functions (left) and  
-%              three cumulative density functions (right) of the GH, Hyperbolic 
-%              and NIG distributions.
-% ------------------------------------------------------------------------------
-% Usage:       -
-% ------------------------------------------------------------------------------
-% Inputs:      None
-% ------------------------------------------------------------------------------
-% Output:      Two plots of pdf (left) and cdf (right) of GH, Hyperbolic and NIG
-%              distributions.              
-% ------------------------------------------------------------------------------
-% Example:     -
-% ------------------------------------------------------------------------------
-% Author:      Wolfgang Haerdle 20091002; Matlab: Awdesch Melzer 20120229
-% ------------------------------------------------------------------------------
-
-% Clear variables and close windows
-clear all;
-close all;
+%% clear variables and close windows
+clear all
+close all
 clc
 
+%% set input
 % Generalised Hyperbolic Distribution
-y = -6:0.1:6;
-xx = y;
+y     = -6:0.1:6;
+xx    = y;
 alpha = 1;
-beta = 0;
+beta  = 0;
 delta = 1; 
-mu = 0;    % mean
-lam = 0.5; % lambda
+mu    = 0;    % mean
+lam   = 0.5; % lambda
 
 % Generalized Hyperbolic
 
@@ -45,17 +25,17 @@ ghcdf = cumsum(ghpdf)/10;
 
 % Normal Inverse Gaussian
 
- lam = -1/2;
+ lam    = -1/2;
  nigpdf =  (alpha^2-beta^2)^(lam/2) / (sqrt(2*pi) * alpha^(lam-1/2) * delta^lam * ... 
                                        besselk(lam, delta*sqrt(alpha^2-beta^2) ) ) * ...
                                 (delta^2 + (y-mu).^2).^(1/2*(lam-1/2)) .* ...
                                  besselk( lam-1/2, alpha*sqrt(delta^2 + (y-mu).^2) ) .* ...
                                  exp( beta*(y-mu) );
-nigcdf = cumsum(nigpdf)/10;
+nigcdf  = cumsum(nigpdf)/10;
 
 % Hyperbolic
 
-lam = 1;
+lam    = 1;
 
 hyppdf =  (alpha^2-beta^2)^(lam/2) / (sqrt(2*pi) * alpha^(lam-1/2) * delta^lam * ... 
                                        besselk(lam, delta*sqrt(alpha^2-beta^2) ) ) * ...
@@ -64,7 +44,7 @@ hyppdf =  (alpha^2-beta^2)^(lam/2) / (sqrt(2*pi) * alpha^(lam-1/2) * delta^lam *
                                  exp( beta*(y-mu) );
 hypcdf = cumsum(hyppdf)/10;
 
-% PDF plots
+%% PDF plots
 subplot(1,2,1)
 hold on
 box on

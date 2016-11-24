@@ -1,7 +1,7 @@
 %% clear loaded variables and close windows
-clear all;
-close all;
-clc;
+clear all
+close all
+clc
 
 %% load data
 x  = load('bank2.dat')
