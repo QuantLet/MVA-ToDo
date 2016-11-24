@@ -11,5 +11,6 @@ See also: MVAcontnorm, MVAghcontour, MVAtdis
 Author: Song Song
 
 Submitted: Fri, August 05 2011 by Awdesch Melzer
+Submitted[Matlab]: Thu, November 24 2016 by Lily Medina
 
 Example: 10000-sample output for sigma_1 = 1, sigma_2 = 1, theta = 3.

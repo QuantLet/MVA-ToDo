@@ -1,36 +1,12 @@
-% ---------------------------------------------------------------------
-% Book:         MVA
-% ---------------------------------------------------------------------
-% Quantlet:     MVAedfbootstrap
-% ---------------------------------------------------------------------
-% Description:  MVAedfbootstrap draws 3 bootstrap samples from a 
-%               simulate data standard normal dataset and plots their 
-%               empirical distribution functions (edf).
-% ---------------------------------------------------------------------
-% Usage:        -
-% ---------------------------------------------------------------------
-% Inputs:       None
-% ---------------------------------------------------------------------
-% Output:       Draws 3 bootstrap samples from a simulate data 
-%               standard normal dataset and plots their empirical 
-%               distribution functions (edf).
-% ---------------------------------------------------------------------
-% Example:      -
-% ---------------------------------------------------------------------
-% Author:       Wolfgang Haerdle, Vladimir Georgescu, Jorge Patron,
-%               Song Song
-% ---------------------------------------------------------------------
-
-
+%% clear all variables
 clear
 close all
 clc
 
-n=100;
-
-x = normrnd(0,1,n,1);
-x = sort(x);
-
+%% set input
+n  = 100;
+x  = normrnd(0,1,n,1);
+x  = sort(x);
 aa = [x(2:n),((1:n-1)/n)'];
 bb = [x(1:n-1),((1:n-1)/n)'];
 cc = [aa;bb];
@@ -58,6 +34,7 @@ cc2   = [aa2;bb2];
 edfs2 = sort(cc2);
 edfs2 = [edfs2(1,1),0;edfs2;edfs2(length(edfs2),1),1];
 
+%% plot
 hold on
 title('EDF and 2 bootstrap EDF''s, n=100');
 xlabel('X');
