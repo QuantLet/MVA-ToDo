@@ -12,7 +12,7 @@ gaussianpdf = normpdf(xx);
 
 % Laplace pdf
 theta = 0; % location
-lam   = 1;   % scale
+lam   = 1; % scale
 
 lappdf1 = 1/(2*lam)*exp(-abs(xx-theta)/lam);
 

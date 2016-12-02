@@ -4,7 +4,7 @@ clear
 clc
 
 %% load data
-x = load('bank2.dat');   
+x  = load('bank2.dat');   
 
 X4 = x(1:100,4);
 X5 = x(1:100,5);

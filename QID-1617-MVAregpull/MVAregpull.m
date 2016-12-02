@@ -4,8 +4,7 @@ close all
 clc
 
 %% load data
-x = load('pullover.dat');  
-
+x   = load('pullover.dat');  
 X1  = x(:,1);
 X2  = x(:,2);
 X   = [ones(length(X2),1) X2];  % matrix with only ones in the first column and X2(price) on the second column 

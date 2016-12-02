@@ -4,9 +4,8 @@ clc
 close all
 
 %% load data
-x = load('bostonh.dat');   
-
-y = x(:,1:5);
+x      = load('bostonh.dat');   
+y      = x(:,1:5);
 y(:,6) = x(:,14);
 
 med = median(y(:,6));

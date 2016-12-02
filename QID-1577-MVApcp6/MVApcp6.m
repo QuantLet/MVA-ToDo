@@ -12,7 +12,7 @@ m1 = mean(frame(:,1));
 m2 = mean(frame(:,2));
 m3 = mean(frame(:,3));
 
-% plot
+%% plot
 hold on
 line([0.775 1.225],[m1 m1],'Color','k','LineStyle',':','LineWidth',1.5)
 line([1.775 2.225],[m2 m2],'Color','k','LineStyle',':','LineWidth',1.5)

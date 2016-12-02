@@ -2,9 +2,9 @@
 clear
 close all
 clc
-%% load data
-x = load('carc.txt');
 
+%% load data
+x     = load('carc.txt');
 frame = x;
 n     = size(frame,1);
 
@@ -43,8 +43,8 @@ p3 = plot(europe','linewidth',1,'Color','b','LineStyle','--')
 title('Parallel Coordinate Plot (Car Data)')
 
 P1 = hggroup;
-P2=hggroup;
-P3=hggroup;
+P2 = hggroup;
+P3 = hggroup;
 
 set(p1,'Parent',P1)
 set(p2,'Parent',P2)

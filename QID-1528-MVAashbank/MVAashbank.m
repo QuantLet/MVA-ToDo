@@ -31,7 +31,6 @@ for l  = 1:4
     fhatk = zeros(1,nbin);
     
     for k   = 1:nbin
-        
         ind      = k:(2*m+k-2);
         fhatk(k) = sum(wm.*fhat(ind));
     end
@@ -40,7 +39,7 @@ for l  = 1:4
     binedge = [zeros(1,1),binedge];
     fhatk   = [zeros(1,1),fhatk,zeros(1,1)];
     
-    % plot the different histograms 
+    %% plot the different histograms 
     subplot(2,2,l)
     stairs(binedge,fhatk) 
     

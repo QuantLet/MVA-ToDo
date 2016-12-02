@@ -2,6 +2,7 @@
 clear all
 close all
 clc
+
 %% input parameters
 n   = 200;
 mu  = [3 2];
@@ -84,10 +85,10 @@ j = 1;
 k = 1;
 for i = 1:900
     xx(j,k) = g(i,2);
-    j       = j+1;
+    j       = j + 1;
     if mod(i,30)==0
         j = 1;
-        k = k+1;
+        k = k + 1;
     end
 end
 
@@ -95,8 +96,8 @@ j = 1;
 k = 1;
 for i = 1:900
     yy(j,k) = g(i,1);
-    j       = j+1;
-    if mod(i,30)==0
+    j       = j + 1;
+    if mod(i,30) == 0
         j = 1;
         k = k+1;
     end
@@ -106,10 +107,10 @@ j = 1;
 k = 1;
 for i = 1:900
     zz(j,k) = g(i,3);
-    j       = j+1;
-    if mod(i,30)==0
+    j       = j + 1;
+    if mod(i,30) == 0
         j = 1;
-        k = k+1;
+        k = k + 1;
     end
 end
 

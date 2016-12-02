@@ -9,9 +9,9 @@ n = 5; % vary n = 35; n = 5
 
 bsamplem = binornd(1, 0.5,n,1000);                       %Random generation of the binomial distribution with parameters 1000*n and 0.5
 [bden xi] = ksdensity((mean(bsamplem) - p)/sqrt(p*(1-p)/n));  %Compute kernel density estimate
-%% plot figure 1 n = 1
+
+%% plot
 hold on
-figure(1)
 plot(xi,bden,'b','Linewidth',2.5)
 xlabel('1000 Random Samples') 
 ylabel('Estimated and Normal Density')
@@ -21,4 +21,3 @@ plot(xi, normpdf(xi), 'r', 'Linewidth',2.5) %Plot normal density
 hold off
 str = sprintf('Asymptotic Distribution, n = %f ',n);
 title(str)
-

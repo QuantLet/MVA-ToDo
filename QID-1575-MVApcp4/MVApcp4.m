@@ -2,9 +2,9 @@
 clear
 close all
 clc
-%% load data
-x = load('carc.txt');
 
+%% load data
+x     = load('carc.txt');
 frame = x(:,11:13); % extracts column 11 to 13 
 n     = size(frame,1);
 

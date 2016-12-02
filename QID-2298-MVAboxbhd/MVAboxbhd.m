@@ -11,10 +11,11 @@ for i = 1:14
     zz(:,i) = (x(:,i)-mean(x(:,i)))/(sqrt(var(x(:,i))));
 end
 
+%% Plot
 subplot(2,1,1)
 hold on
 boxplot(zz,'Symbol','o')
-for i=1:14
+for i = 1:14
     line([ i-0.25  i+0.25],[mean(zz(:,i)) mean(zz(:,i))],'Color','k','LineStyle',':','LineWidth',1.2)
 end
 title('Boston Housing Data')
@@ -43,7 +44,7 @@ for i = 1:14
     tt(:,i) = (xt(:,i)-mean(xt(:,i)))/(sqrt(var(xt(:,i))));
 end
 
-%% Plot
+
 boxplot(tt,'Symbol','o')
 for i = 1:14
     line([ i-0.25  i+0.25],[mean(tt(:,i)) mean(tt(:,i))],'Color','k','LineStyle',':','LineWidth',1.2)
