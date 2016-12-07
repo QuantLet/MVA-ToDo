@@ -2,9 +2,9 @@
 clear
 close all
 clc
-%% load data
-x = load('carc.txt');
 
+%% load data
+x     = load('carc.txt');
 frame = x(:,5:7); % extracts column 5 to 7/'headroom','rear seat','trunk space'  
 n     = size(frame,1);
 

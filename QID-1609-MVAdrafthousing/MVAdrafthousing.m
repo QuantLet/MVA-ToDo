@@ -5,7 +5,6 @@ clc
 
 %% load data
 x = load('bostonh.dat');   
-
 y = x(:,1:5);
 
 for i = 1:length(x)
@@ -78,10 +77,10 @@ l = 1;
 for i = 1:length(y)
     if y(i,6)<med
         low2(k) = y(i,2);
-        k       = k+1;   
+        k       = k + 1;   
     else
         hi2(l) = y(i,2);
-        l      = l+1;
+        l      = l + 1;
     end
 end
 
@@ -111,10 +110,10 @@ l = 1;
 for i = 1:length(y)
     if y(i,6)<med
         low3(k) = y(i,3);
-        k       = k+1;   
+        k       = k + 1;   
     else
         hi3(l) = y(i,3);
-        l      = l+1;
+        l      = l + 1;
     end
 end
 
@@ -144,10 +143,10 @@ l = 1;
 for i = 1:length(y)
     if y(i,6)<med
         low4(k) = y(i,4);
-        k       = k+1;   
+        k       = k + 1;   
     else
         hi4(l) = y(i,4);
-        l      = l+1;
+        l      = l + 1;
     end
 end
 
@@ -177,10 +176,10 @@ l = 1;
 for i = 1:length(y)
     if y(i,6)<med
         low5(k) = y(i,5);
-        k       = k+1;   
+        k       = k + 1;   
     else
         hi5(l) = y(i,5);
-        l      = l+1;
+        l      = l + 1;
     end
 end
 
@@ -209,10 +208,10 @@ l = 1;
 for i = 1:length(y)
     if y(i,6)<med
         low14(k) = y(i,6);
-        k        = k+1;   
+        k        = k + 1;   
     else
         hi14(l) = y(i,6);
-        l       = l+1;
+        l       = l + 1;
     end
 end
 

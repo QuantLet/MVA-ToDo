@@ -6,7 +6,6 @@ clc
 %% load data
  x = load('bank2.dat');                  % reads the bank data
  z = x(96:105,:);                        % extracts observations 96-105
- 
  s = size(z);
  
  minz   = repmat(min(z),s(1,1),1);

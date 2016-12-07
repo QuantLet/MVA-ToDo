@@ -1,4 +1,4 @@
-Name of QuantLet: MVAscapull2
+IName of QuantLet: MVAscapull2
 
 Published in: Applied Multivariate Statistical Analysis
 

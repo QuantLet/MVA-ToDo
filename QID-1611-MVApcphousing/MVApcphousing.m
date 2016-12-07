@@ -6,7 +6,6 @@ close all
 %% load data
 x = load('bostonh.dat');
 z = x(:,1:14);
-
 s = size(z);
 
 minz = repmat(min(z),s(1,1),1);

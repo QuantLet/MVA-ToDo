@@ -44,7 +44,8 @@ hyppdf =  (alpha^2-beta^2)^(lam/2) / (sqrt(2*pi) * alpha^(lam-1/2) * delta^lam *
                                  exp( beta*(y-mu) );
 hypcdf = cumsum(hyppdf)/10;
 
-%% PDF plots
+%% plots
+% PDF plots
 subplot(1,2,1)
 hold on
 box on

@@ -13,8 +13,8 @@ delta = 1;
 mu    = 0;    % mean
 lam   = 0.5; % lambda
 
+%% compute PDFs
 % Generalized Hyperbolic
-
 gh05pdf =  (alpha^2-beta^2)^(lam/2) / (sqrt(2*pi) * alpha^(lam-1/2) * delta^lam * ... 
                                        besselk(lam, delta*sqrt(alpha^2-beta^2) ) ) * ...
                                 (delta^2 + (y-mu).^2).^(1/2*(lam-1/2)) .* ...

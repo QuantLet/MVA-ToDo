@@ -11,7 +11,7 @@ n = input('[n]=');
 %% generate random variables
 y = normrnd(0,1,n,1); %Generate standard normal random numbers
 
-%% ploy
+%% plot
 cdfplot(y)            %Plot the empirical distribution function
 
 hold on

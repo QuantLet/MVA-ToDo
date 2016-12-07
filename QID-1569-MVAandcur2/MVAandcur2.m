@@ -5,8 +5,7 @@
 
  %% load data
  x = load('bank2.dat'); 
- 
- z = x(96:105,:);                                       % extracts observations 96-105
+ z = x(96:105,:);                                      % extracts observations 96-105
  s = size(z);
  
  minz   = repmat(min(z),s(1,1),1);
@@ -18,6 +17,7 @@
  zgen = z2(1:5,:);
  zcou = z2(6:10,:);
  
+%% plot
  hold on
  andrewsplot(zgen,'LineWidth',1.5,'Color','k')      
  andrewsplot(zcou,'LineWidth',1.5,'Color','r','Linestyle',':')
