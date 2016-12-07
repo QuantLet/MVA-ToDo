@@ -43,16 +43,14 @@ X1 = X1 + e
 X2 = X2 + e
 
 Spiral.noise = cbind(X2, X1)  
-  
-sc   = specc(Spiral.noise, centers=4)
-centers(sc)
-size(sc)
-withinss(sc)
 
-# 
 # clusters for generated spiral data
+sc = specc(Spiral.noise, centers=4)
+
+# Plots
+windows()
 plot(Spiral.noise, col="black", xlab="",ylab="", lwd=2, pch=16)
-title("The generated spiral data")
+title("Simulated spiral data")
 windows()
 plot(Spiral.noise, col=sc, xlab="",ylab="", lwd=2, pch=16)
-title("The 4 clusters for the generated spiral data")
+title("Clusters for the simulated spiral data")

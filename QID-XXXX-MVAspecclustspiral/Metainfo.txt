@@ -1,21 +1,16 @@
-# ------------------------------------------------------------------------------
-# Book:         MVA
-# ------------------------------------------------------------------------------
-# Quantlet:     MVAspecclustspiral
-# ------------------------------------------------------------------------------
-# Description:  MVAspecclustspiral computes the clusters for an exemplary  
-#               spiral data.
-# ------------------------------------------------------------------------------
-# Usage:        -
-# ------------------------------------------------------------------------------
-# Keywords:     spectral clustering, partitioning, proximity, cluster, grouping,
-#               normalized cut, cut cost, fMRI  
-# ------------------------------------------------------------------------------
-# Inputs:       
-# ------------------------------------------------------------------------------
-# Output:       Plot of derived clusters 
-# ------------------------------------------------------------------------------
-# Example:     
-# ------------------------------------------------------------------------------
-# Author:       Awdesch Melzer, Simon Trimborn
-# ------------------------------------------------------------------------------
+Name of Quantlet: MVAspecclustspiral
+
+Published in: Applied Multivariate Statistical Analysis
+
+Description: 'Simulates a spiral dataset and clusters it in four groups by 
+              means of a spectral clustering algorithm. It plots the simulated data and 
+              its clusters'
+
+Keywords:     spectral clustering, partitioning, proximity, cluster, grouping,
+              normalized cut, cut cost, fMRI  
+
+Author:       Awdesch Melzer, Simon Trimborn
+
+Submited:     Wed, Dec 07 2016 by Piedad Castro
+
+Output:       'Plots of data and the derived clusters'
