@@ -10,8 +10,10 @@ See also: MMSTATassociation, MVAdrugLogistic, MVAdrugsim, MVAdrug3waysTab
 
 Author: Zografia Anastasiadou
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Lasse Groth
 
 Submitted: Wed, October 08 2014 by Sergey Nasekin
-Submitted[SAS]: Tue, April 5 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Tue, April 05 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Thu, December 08 2016 by Piedad Castro
 
 Output: Top table for men and bottom table for women.

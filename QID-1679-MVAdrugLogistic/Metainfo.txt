@@ -11,5 +11,8 @@ See also: MVAdrug3waysTab, MVAdrug
 Author: Awdesch Melzer
 
 Submitted: Wed, April 04 2012 by Dedy Dwi Prastyo
+Submitted[Matlab]: Thu, December 08 2016 by Piedad Castro
 
 Example: Fit of the log of the odds-ratios for taking drugs. Men are the stars and women are the circles.
+
+
