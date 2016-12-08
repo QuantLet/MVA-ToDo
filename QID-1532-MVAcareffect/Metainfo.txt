@@ -7,7 +7,9 @@ Description: Computes the effect of weight and the displacement on the mileage. 
 Keywords: regression, multivariate, linear, linear-regression, linear-model 
 
 Author: Mengmeng Guo
+Author[Matlab]: Awdesch Melzer
 
 Submitted: Tue, February 07 2012 by Dedy Dwi Prastyo
+Submitted[Matlab]: Thu, December 08 2016 by Piedad Castro
 
 Datafile: carc.dat

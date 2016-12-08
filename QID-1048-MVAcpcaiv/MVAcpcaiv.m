@@ -47,9 +47,9 @@ end
 NewB = [];
 absi = abs(sum(B, 1));
 while sum(absi) > -size(B,2)    
-    maxi = max(absi);
-    index = find(absi == maxi);    
-    NewB = [NewB B(:,index)];
+    maxi        = max(absi);
+    index       = find(absi == maxi);    
+    NewB        = [NewB B(:,index)];
     absi(index) = -1;
 end
 

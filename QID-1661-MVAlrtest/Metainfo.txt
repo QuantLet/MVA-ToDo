@@ -10,6 +10,10 @@ Author: Awdesch Melzer
 Author[SAS]: Svetlana Bykovskaya
 
 Submitted: Wed, March 14 2012 by Dedy Dwi Prastyo
-Submitted[SAS]: Wen, April 6 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Wed, December 07 2016 by Piedad Castro
 
 Datafile: pullover.dat
+
+Output: 'Estimated parameters for the restricted and the unrestricted model and 
+         test statistics for linear restriction and the F-test.'

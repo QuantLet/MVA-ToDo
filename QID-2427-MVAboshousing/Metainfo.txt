@@ -9,8 +9,10 @@ Keywords: ANCOVA, anova, regression, financial, covariance, linear, linear-model
 See also: SMSanovapull, SMSdete2pull
 
 Author: Mengmeng Guo
+Author[Matlab]: Awdesch Melzer
 
 Submitted: Mon, July 07 2014 by Philipp Gschoepf
+Submitted[Matlab]: Thu, December 08 2014 by Piedad Castro
 
 Datafile: bostonh.dat
 

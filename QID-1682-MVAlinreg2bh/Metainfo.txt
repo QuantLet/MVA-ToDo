@@ -10,8 +10,10 @@ See also: MVAlinregbh, MMSTATlinreg, MVAregbank, MVAregpull, MVAregzoom, MVAsimc
 
 Author: Till Grossmass, Jorge Patron, Vladimir Georgescu, Song Song, Awdesch Melzer
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Wolfgang Haerdle, Till Grossmass, Jorge Patron, Vladimir Georgescu, Song Song
 
 Submitted: Wed, April 04 2012 by Dedy Dwi Prastyo
-Submitted[SAS]: Wen, April 6 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Thu, December 08 2016 by Piedad Castro
 
 Datafile: bostonh.dat

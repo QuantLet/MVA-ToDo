@@ -9,7 +9,9 @@ Keywords: F-test, F-statistic, critical-value, confidence-interval, test, hypoth
 See also: MVAlinregbh, MVAdiscbh, MVAdescbh, MVAclusbh, MVAboxbhd, MVAaerbh
 
 Author: Vladimir Georgescu, Song Song, Awdesch Melzer
+Author[Matlab]:  Wolfgang Haerdle, Vladimir Georgescu, Song Song
 
 Submitted: Wed, April 04 2012 by Dedy Dwi Prastyo
+Submitted[Matlab]: Thu, December 08 by Piedad Castro
 
 Datafile: bostonh.dat
