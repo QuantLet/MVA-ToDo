@@ -1,51 +1,26 @@
-% -------------------------------------------------------------------------
-% Book:         MVA
-% -------------------------------------------------------------------------
-% Quantlet:     MVApcabanki
-% -------------------------------------------------------------------------
-% Description:  MVApcabanki shows a screeplot of the eigenvalues for the
-%               PCA of the Swiss bank notes (bank2.dat). It  computes the 
-%               correlations between the variables and the principal 
-%               components and displays the first two of them.
-% -------------------------------------------------------------------------
-% See also:     MVAcpcaiv, MVAnpcabank, MVAnpcafood, MVAnpcahous, 
-%               MVAnpcahousi, MVAnpcahousi, MVAnpcausco, MVAnpcausco2,
-%               MVApcabankr, MVApcasimu, MVApcasimu
-% -------------------------------------------------------------------------
-% Keywords:     PCA, correlation, eigenvalues, principal components, 
-%               screeplot
-% -------------------------------------------------------------------------
-% Usage:        -
-% -------------------------------------------------------------------------
-% Inputs:       None
-% -------------------------------------------------------------------------
-% Output:       Screeplot of the eigenvalues for the PCA of the Swiss bank 
-%               notes (bank2.dat). It computes the correlations between the 
-%               variables and the principal components and displays the 
-%               first two of them.
-% -------------------------------------------------------------------------
-% Example:      -
-% -------------------------------------------------------------------------
-% Author:       Wolfgang Haerdle, Jorge Patron, Vladimir Georgescu, 
-%               Song Song optimized at 090612
-% -------------------------------------------------------------------------
-
- % clear variables and close plots
-close all
-clc
+%% clear all variables and console and close windows
 clear
+clc
+close all
 
+%% load data
 x      = load('bank2.dat');
-[n p]  = size(x);
+[n,p]  = size(x);
+
 adjust = (n-1)*cov(x)/n;
-[v e]  = eigs(adjust,p,'la'); % Calculates eigenvalues and eigenvectors and sorts them by size
+[v,e]  = eigs(adjust,p,'la');    % Calculates eigenvalues and eigenvectors and sorts them by size
 e1     = (e*ones(p,1))';         % Creates column vector of eigenvalues
 s      = sum(e1);
 e1     = e1/s;
 
- % Plotting relative proportion of variance explained by PCs
-nr     = 1:6;
-figure(1)
+% change the sign of some eigenvectors . This is done only to make easier
+% the comparison with R results.
+v(:,[1,2,3,5,6]) = -v(:,[1,2,3,5,6]);
+
+%% plots
+%% plot, relative proportion of variance explained by PCs
+nr = 1:6;
+figure
 scatter(nr,e1,75,'k')
 xlabel('Index')
 ylabel('Variance Explained')
@@ -53,20 +28,16 @@ title('Swiss Bank Notes')
 xlim([0.5 6.5])
 ylim([-0.02 0.8])
 box on
+
 m      = mean(x);
 temp   = x-repmat(m,n,1);
 r      = temp*v;
 r      = horzcat(r,x);
-r      = corr(r);
-r1     = (-1)*r(7:12,1:2);       % CORRECTION
- % to save the plot in pdf or png please uncomment next 2 lines:
- %  print -painters -dpdf -r600 MVApcabanki01.pdf
- %  print -painters -dpng -r600 MVApcabanki01.png
+r      = corr(r);           % correlation between PCs and variables
+r1     = r(7:12,1:2);       % correlation of the two most important PCs and variables
 
-
-
- % Plot the correlation of the original variable with the PCs.
-figure(2)
+%% plot, correlation of the original variable with the PCs.
+figure
 hold on
 xlim([-1.2 1.2])
 ylim([-1.2 1.2])
@@ -84,8 +55,3 @@ text(r1(3,1),r1(3,2),'X3')
 text(r1(4,1),r1(4,2),'X4')
 text(r1(5,1),r1(5,2),'X5')
 text(r1(6,1),r1(6,2),'X6')
-hold off
-
- % to save the plot in pdf or png please uncomment next 2 lines:
- %  print -painters -dpdf -r600 MVApcabanki02.pdf
- %  print -painters -dpng -r600 MVApcabanki02.png

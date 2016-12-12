@@ -19,12 +19,12 @@ plot(x[, 1], x[, 2], pch = c(rep(1, 100), rep(3, 100)), col = c(rep("blue", 100)
 
 # plot of the second vs. third PC
 plot(x[, 2], x[, 3], pch = c(rep(1, 100), rep(3, 100)), col = c(rep("blue", 100), 
-    rep("red", 100)), ylim = c(-238.5, -241.5), xlab = "PC2", ylab = "PC3", main = "Second vs. Third PC", 
+    rep("red", 100)), ylim = c(-242, -238), xlab = "PC2", ylab = "PC3", main = "Second vs. Third PC", 
     cex.lab = 1.2, cex.axis = 1.2, cex.main = 1.8)
 
 # plot of the first vs. third PC
 plot(x[, 1], x[, 3], pch = c(rep(1, 100), rep(3, 100)), col = c(rep("blue", 100), 
-    rep("red", 100)), ylim = c(-238.5, -241.5), xlab = "PC1", ylab = "PC3", main = "First vs. Third PC", 
+    rep("red", 100)), ylim = c(-241, -238), xlab = "PC1", ylab = "PC3", main = "First vs. Third PC", 
     cex.lab = 1.2, cex.axis = 1.2, cex.main = 1.8)
 
 # plot of the eigenvalues

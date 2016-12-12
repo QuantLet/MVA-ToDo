@@ -8,9 +8,13 @@ Keywords: decomposition, eigenvalues, eigenvectors, spectral, spectral-decomposi
 
 Author: Zografia Anastasiadou
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Wolfgang Haerdle, Jorge Patron, Vladimir Georgescu, Song Song
 
 Submitted: Fri, April 11 2014 by Awdesch Melzer
-Submitted[SAS]: Wen, April 6 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Mon, December 12 2016 by Piedad Castro
 
 Datafiles: food.dat
 
+Note: 'Matlab and SAS decompose matrices differently than R, and therefore some 
+      of the eigenvectors may have different signs.'

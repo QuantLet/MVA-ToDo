@@ -9,19 +9,14 @@ Keywords: principal-components, pca, eigenvalues, projection, screeplot, scatter
 See also: MVAnpcabanki, MVAnpcabank, MVAnpcahousi, MVAnpcatime, MVAnpcafood, MVAnpcausco, MVAnpcausco2, MVAnpcausco2i, MVAcpcaiv, MVAnpcahous, MVApcabanki, MVApcabankr, MVApcabank
 
 Author: Zografia Anastasiadou, Maria Osipenko
-
 Author[Matlab]: Zografia Anastasiadou, Maria Osipenko
 
 Submitted: July 01 2014 by Petra Burdejova
-
-Submitted[Matlab]: Sept 01 2016 by Petra Burdejova
-
-Input:
-- nu = 1
-- roh = 0.5
-- n = 200
-- sug = [1 0.5; 0.5 1]
+Submitted[Matlab]: Mon, December 12 2016 by Piedad Castro
 
 Example: 
 - 1: Direction of first component for simulated data.
 - 2: Direction of second component for simulated data.
+
+Note: 'Matlab and SAS decompose matrices differently than R, and therefore some 
+      of the eigenvectors may have different signs.'

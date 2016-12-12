@@ -21,20 +21,20 @@ xt[, 11] = exp(0.4 * data[, 11])/1000
 xt[, 12] = data[, 12]/100
 xt[, 13] = sqrt(data[, 13])
 xt[, 14] = log(as.numeric(data[, 14]))
-data     = xt[, -4]
-
+data     = xt[, -4] 
+ 
 n1  = nrow(data)
 n2  = ncol(data)
-x   = (data - matrix(mean(as.matrix(data)), n1, n2, byrow = T))/matrix(sqrt((n1 - 1) * 
-    apply(data, 2, var)/n1), n1, n2, byrow = T)  # standardizes the data
+x   = (data - matrix(apply(data,2,mean), n1, n2, byrow = T))/matrix(sqrt((n1 - 1) * 
+       apply(data, 2, var)/n1), n1, n2, byrow = T)  # standardizes the data
 eig = eigen((n1 - 1) * cov(x)/n1)  # spectral decomposition
 e   = eig$values
 v   = eig$vectors
-x1  = as.matrix(x - matrix(mean(as.matrix(x)), nrow(x), ncol(x), byrow = T))
+x1  = as.matrix(x - matrix(apply(x,2,mean), n1, n2, byrow = T))
 r1  = x1 %*% v
 r   = cor(cbind(r1, x))
 
-# correlations between variables and pc's
+# correlations between variables and the first three pc's
 r12  = r[14:26, 1:2]
 r13  = cbind(r[14:26, 1], r[14:26, 3])
 r32  = cbind(r[14:26, 3], r[14:26, 2])
