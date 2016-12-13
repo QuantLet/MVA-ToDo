@@ -35,9 +35,6 @@ r1  = x1 %*% v
 r   = cor(cbind(r1, x))
 
 # correlations between variables and the first three pc's
-r12  = r[14:26, 1:2]
-r13  = cbind(r[14:26, 1], r[14:26, 3])
-r32  = cbind(r[14:26, 3], r[14:26, 2])
 r123 = r[14:26, 1:3]
 
 # plot
@@ -48,7 +45,7 @@ plot(ucircle, type = "l", lty = "solid", col = "blue", xlab = "First PC", ylab =
 abline(h = 0, v = 0)
 label = c("X1", "X2", "X3", "X5", "X6", "X7", "X8", "X9", "X10", "X11", "X12", "X13", 
     "X14")
-text(r12, label)
+text(r123[,c(1,2)], label)
 
 ucircle = cbind(cos((0:360)/180 * pi), sin((0:360)/180 * pi))
 plot(ucircle, type = "l", lty = "solid", col = "blue", xlab = "Third PC", ylab = "Second PC", 
@@ -56,7 +53,7 @@ plot(ucircle, type = "l", lty = "solid", col = "blue", xlab = "Third PC", ylab =
 abline(h = 0, v = 0)
 label = c("X1", "X2", "X3", "X5", "X6", "X7", "X8", "X9", "X10", "X11", "X12", "X13", 
     "X14")
-text(r32, label)
+text(r123[,c(3,2)], label)
 
 ucircle = cbind(cos((0:360)/180 * pi), sin((0:360)/180 * pi))
 plot(ucircle, type = "l", lty = "solid", col = "blue", xlab = "First PC", ylab = "Third PC", 
@@ -64,12 +61,4 @@ plot(ucircle, type = "l", lty = "solid", col = "blue", xlab = "First PC", ylab =
 abline(h = 0, v = 0)
 label = c("X1", "X2", "X3", "X5", "X6", "X7", "X8", "X9", "X10", "X11", "X12", "X13", 
     "X14")
-text(r13, label)
-
-ucircle = cbind(cos((0:360)/180 * pi), sin((0:360)/180 * pi))
-plot(ucircle, type = "l", lty = "solid", col = "blue", xlab = "X", ylab = "Y", cex.lab = 1.2, 
-    cex.axis = 1.2, lwd = 2)
-abline(h = 0, v = 0)
-label = c("X1", "X2", "X3", "X5", "X6", "X7", "X8", "X9", "X10", "X11", "X12", "X13", 
-    "X14")
-text(r123, label) 
+text(r123[,c(1,3)], label)

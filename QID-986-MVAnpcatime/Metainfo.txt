@@ -12,12 +12,17 @@ See also: MVAnpcabanki, MVAnpcahous, MVAnpcahousi, MVAnpcabank, MVAnpcafood, MVA
 
 Author: Zografia Anastasiadou, Awdesch Melzer
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Jorge Patron, Vladimir Georgescu, Song Song
 
 Submitted: Wed, April 02 2014 by Awdesch Melzer
-Submitted[SAS]: Tue, April 5 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Tue, April 05 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Tue, December 13 2016 by Piedad Castro
 
 Datafile: timebudget.dat
 
 Example: 
 - 1: Representation of the individuals.
 - 2: Representation of the variables.
+
+Note: 'Matlab and SAS decompose matrices differently than R, and therefore some 
+      of the eigenvectors may have different signs.'

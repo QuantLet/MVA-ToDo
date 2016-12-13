@@ -16,7 +16,7 @@ e1 = e$values
 plot(e1, xlab = "Index", ylab = "Lambda", main = "U.S. Company Data", cex.lab = 1.2, 
     cex.axis = 1.2, cex.main = 1.8)
 
-m    = mean(x)
+m    = apply(x, 2, mean)
 temp = as.matrix(x - matrix(m, n, ncol(x), byrow = T))
 r    = temp %*% e$vectors
 r    = cor(cbind(r, x))         # correlation between PCs and variables
