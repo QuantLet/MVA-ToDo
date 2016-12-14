@@ -7,8 +7,10 @@ Description: Performs factor analysis based on 3 factors for the transformed Bos
 Keywords: eigenvalues, factor analysis, likelihood, principal-components, spectral-decomposition, standardize, varimax, plot, graphical representation
 
 Author: Zografia Anastasiadou
+Author[Matlab]: Awdesch Melzer
 
 Submitted: Fri, October 10 2014 by Sergey Nasekin
+Submitted[Matlab]: Wed, December 14 by Piedad Castro
 
 Datafiles: bostonh.dat
 
@@ -17,3 +19,6 @@ Example:
 - 2: Factor analysis for Boston housing data, Maximum Likelihood Method (MLM) after varimax rotation.
 - 3: Factor analysis for Boston housing data, Principal Factor Method (PFM) after varimax rotation.
 - 4: Factor analysis for Boston housing data, Principal Component Method (PCM) after varimax rotation.
+
+Note: 'Matlab and SAS decompose matrices differently than R, and therefore some 
+      of the eigenvectors may have different signs.'

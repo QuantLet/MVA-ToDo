@@ -4,7 +4,7 @@ clc
 close all
 
 %% load data
-data = load('bostonh.dat');hhhh
+data = load('bostonh.dat');
 
 %% Transformations
 xt       = data;
@@ -45,14 +45,14 @@ r  = corr([r1 x]);
 r123 = r(14:end, 1:3);
 
 %% plots
-%% First and Second PC
-subplot(1,3,1)
+% First and Second PC
+subplot(2,2,1)
 hold on
 xlim([-1.2 1.2])
 ylim([-1.2 1.2])
 line([-1.2 1.2],[0 0],'Color','k')
 line([0 0],[1.2 -1.2],'Color','k')
-% title('Boston Housing','FontSize',12,'FontWeight','bold')
+title('Boston Housing','FontSize',12,'FontWeight','bold')
 xlabel('First PC','FontSize',12,'FontWeight','bold')
 ylabel('Second PC','FontSize',12,'FontWeight','bold')
 set(gca,'FontSize',12,'FontWeight','bold','Box','on')
@@ -65,8 +65,9 @@ for i=1:length(r123)
         text(r123(i,1),r123(i,2),strcat('X',int2str(i+1)),'FontSize',10,'FontWeight','bold')
     end
 end
-%% Third and Second PC
-subplot(1,3,2)
+
+% Third and Second PC
+subplot(2,2,2)
 hold on
 xlim([-1.2 1.2])
 ylim([-1.2 1.2])
@@ -85,15 +86,16 @@ for i=1:length(r123)
         text(r123(i,1),r123(i,2),strcat('X',int2str(i+1)),'FontSize',10,'FontWeight','bold')
     end
 end
-%% First and Third PC
-subplot(1,3,3)
+
+% First and Third PC
+subplot(2,2,3)
 circle = rsmak('circle');
 fnplt(circle)
 xlim([-1.2 1.2])
 ylim([-1.2 1.2])
 line([-1.2 1.2],[0 0],'Color','k')
 line([0 0],[1.2 -1.2],'Color','k')
-% title('Boston Housing','FontSize',12,'FontWeight','bold')
+title('Boston Housing','FontSize',12,'FontWeight','bold')
 xlabel('First PC','FontSize',12,'FontWeight','bold')
 ylabel('Third PC','FontSize',12,'FontWeight','bold')
 set(gca,'FontSize',12,'FontWeight','bold','Box','on')
