@@ -4,8 +4,8 @@ rm(list = ls(all = TRUE))
 graphics.off()
 
 # load data
-x1       = read.table("bac.dat")
-x1       = x1[, 2:ncol(x1)]
+data     = read.table("bac.dat")
+x1       = data[, 2:ncol(data)]
 wcors    = 0                   # set to 0/1 to ex/include Corsica
 wcorsica = c(rep(1, nrow(x1) - 1), wcors)
 x        = subset(x1, wcorsica == 1)
@@ -44,15 +44,11 @@ cas  = matrix(matrix(b), nrow = nrow(s), ncol = ncol(s), byrow = F) * s^2/matrix
 rr   = r[, 1:2]
 ss   = s[, 1:2]
 
+# labels for modalities
+types   = c("A", "B", "C", "D", "E", "F", "G", "H")
 if (wcors == 0) {
-    # labels for modalities
-    types   = c("A", "B", "C", "D", "E", "F", "G", "H")
-    
     # labels for regions
-    regions = c("ildf", "cham", "pica", "hnor", "cent", "bnor", "bour", "nopc", 
-        "lorr", "alsa", "frac", "payl", "bret", "pcha", "aqui", "midi", "limo", "rhoa", 
-        "auve", "laro", "prov")
-    
+    regions = as.character(data[1:(nrow(data)-1),1])
     # plot 1
     plot(rr, type = "n", xlim = c(-0.25, 0.15), ylim = c(-0.15, 0.15), xlab = "r_1,s_1", 
         ylab = "r_2,s_2", main = "Baccalaureat Data", cex.axis = 1.2, cex.lab = 1.2, 
@@ -62,14 +58,8 @@ if (wcors == 0) {
     text(ss, types, cex = 1.5, col = "red")
     abline(h = 0, v = 0, lwd = 2)
 } else {
-    # labels for modalities
-    types   = c("A", "B", "C", "D", "E", "F", "G", "H")
-    
     # labels for regions
-    regions = c("ildf", "cham", "pica", "hnor", "cent", "bnor", "bour", "nopc", 
-        "lorr", "alsa", "frac", "payl", "bret", "pcha", "aqui", "midi", "limo", "rhoa", 
-        "auve", "laro", "prov", "cors")
-    
+    regions = as.character(data[,1])
     # plot 2
     plot(rr, type = "n", xlim = c(-0.2, 0.25), ylim = c(-0.5, 0.15), xlab = "r_1,s_1", 
         ylab = "r_2,s_2", main = "Baccalaureat Data", cex.axis = 1.2, cex.lab = 1.2, 

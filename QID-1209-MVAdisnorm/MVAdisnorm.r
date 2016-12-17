@@ -3,26 +3,24 @@
 rm(list = ls(all = TRUE))
 graphics.off()
 
-x 	= seq(-4, 4, 0.05)  	# generates a sequence on real axis
-s1 	= 0.1  			# standard deviation for y1
-mu1 	= 0.2  			# mean for y1
-s2 	= 0.1  			# square root of variance for y2
-mu2 	= -0.6  		# mean for y2
+x   = seq(-3, 3, 0.05)  	# generates a sequence on real axis
+s1 	= 1  			  # standard deviation for y1
+mu1 = 0  			# mean for y1
+s2 	= 0.5  			# square root of variance for y2
+mu2 = 1  	  	# mean for y2
 
 y1 = cbind(x, dnorm(x, mean = mu1, sd = s1))  # density y1
 y2 = cbind(x, dnorm(x, mean = mu2, sd = s2))  # density y2
 
 if (mu1 != mu2 & s1 != s2) {
-    
-    # first discrimination point
-    c1 = -(mu2 * s1^2 - mu1 * s2^2)/(s2^2 - s1^2) + sqrt(((mu2 * s1^2 - mu1 * s2^2)/(s2^2 - 
-        s1^2))^2 - ((mu1^2 * s2^2 - mu2^2 * s1^2 - 2 * log(s2/s1) * s1^2 * s2^2)/(s2^2 - 
-        s1^2)))
-    
-    # second discrimination point
-    c2 = -(mu2 * s1^2 - mu1 * s2^2)/(s2^2 - s1^2) - sqrt(((mu2 * s1^2 - mu1 * s2^2)/(s2^2 - 
-        s1^2))^2 - ((mu1^2 * s2^2 - mu2^2 * s1^2 - 2 * log(s2/s1) * s1^2 * s2^2)/(s2^2 - 
-        s1^2)))
+  # first discrimination point
+  c1 = -(mu2 * s1^2 - mu1 * s2^2)/(s2^2 - s1^2) + sqrt(((mu2 * s1^2 - mu1 * s2^2)/(s2^2 - 
+       s1^2))^2 - ((mu1^2 * s2^2 - mu2^2 * s1^2 - 2 * log(s2/s1) * s1^2 * s2^2)/(s2^2 - 
+       s1^2)))
+  # second discrimination point
+  c2 = -(mu2 * s1^2 - mu1 * s2^2)/(s2^2 - s1^2) - sqrt(((mu2 * s1^2 - mu1 * s2^2)/(s2^2 - 
+       s1^2))^2 - ((mu1^2 * s2^2 - mu2^2 * s1^2 - 2 * log(s2/s1) * s1^2 * s2^2)/(s2^2 - 
+       s1^2)))
 } else if (mu1 != mu2 & s1 == s2) {
     if (mu2 < 0 & mu1 < 0) {
         c1 = mu2 - (mu2 - mu1)/2

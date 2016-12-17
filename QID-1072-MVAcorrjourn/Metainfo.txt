@@ -1,4 +1,4 @@
-Name of QuantLet: MVAcorrjourn
+﻿Name of QuantLet: MVAcorrjourn
 
 Published in: Applied Multivariate Statistical Analysis
 
@@ -10,8 +10,13 @@ See also: MVAcorrCar, MVAcorrEyeHair, MVAcorrbac, MVAcorrcrime, SMScorrcrime, SM
 
 Author: Zografia Anastasiadou
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Wolfgang K. Härdle, Jorge Patron, Vladimir Georgescu, Song Song
 
 Submitted: Tue, May 10 2011 by Zografia Anastasiadou
-Submitted[SAS]: Tue, April 5 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Tue, April 05 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Fri, December 16 by Piedad Castro
 
 Datafile: journaux.dat
+
+Note: 'Matlab and SAS decompose matrices differently than R, and therefore some 
+      of the eigenvectors may have different signs.'

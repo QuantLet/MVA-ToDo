@@ -13,7 +13,7 @@ car     = cardat[, -1]
 colnames(car) = c("economy", "service", "value", "price", "design", "sporty", "safety", 
     "handling")
 
-# define car marks
+# define car brands
 rownames(car) = c("Audi", "BMW", "Citroen", "Ferrari", "Fiat", "Ford", "Hyundai", 
     "Jaguar", "Lada", "Mazda", "Mercedes", "Mitsubishi", "Nissan", "Opel Corsa", 
     "Opel Vectra", "Peugeot", "Renault", "Rover", "Toyota", "Trabant", "VW Golf", 
@@ -37,6 +37,6 @@ phi     = as.matrix(cars[, 3:8]) %*% b[, 1]
 etaphi  = cbind(eta, phi)
 
 # plot
-plot(etaphi, type = "n", xlab = "Eta 1", ylab = "Phi 1", main = "Car Marks Data", 
+plot(etaphi, type = "n", xlab = "Eta 1", ylab = "Phi 1", main = "Car Brands Data", 
     cex.lab = 1.2, cex.axis = 1.2, cex.main = 1.8)
 text(etaphi, rownames(car))

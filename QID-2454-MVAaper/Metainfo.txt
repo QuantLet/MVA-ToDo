@@ -12,6 +12,7 @@ Author: Wolfgang K. Haerdle, Vladimir Georgescu, Song Song, Awdesch Melzer
 Author[SAS]: Svetlana Bykovskaya
 
 Submitted: Thu, June 05 2014 by Sergey Nasekin
-Submitted[SAS]: Wen, April 6 2016 by Svetlana Bykovskaya
+Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
+SUbmitted[Matlab]: Fri, December 16 by Piedad Castro
 
 Datafile: bank2.dat

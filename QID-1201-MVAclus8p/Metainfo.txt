@@ -10,10 +10,12 @@ See also: MVAclusfood, MVAclusbank, MVAspecclust, MVAclusbh, MVAclususcrime, SMS
 
 Author: Zografia Anastasiadou
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Zografia Anastasiadou, Awdesch Melzer
 
 Submitted: Thu, September 11 2014 by Franziska Schulz
 Submitted[SAS]: Mon, March 14 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Thu, December 15 2016 by Piedad Castro
 
-Example: 
-- 1: The dendrogram for the 8-point example after Single linkage algorithm.
-- 2: The 8-point example.
+Example:
+- 1: The 8-point example.
+- 2: The dendrogram for the 8-point example after Single linkage algorithm.

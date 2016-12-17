@@ -27,10 +27,10 @@ title('Time Budget Data');
 xlabel('First Factor - Individuals');
 ylabel('Second Factor - Individuals');
 % labels of the individuals
-fams=['maus';'waus';'wnus';'mmus';'wmus';'msus';'wsus';'mawe';'wawe';
-      'wnwe';'mmwe';'wmwe';'mswe';'wswe';'mayo';'wayo';'wnyo';'mmyo';
-      'wmyo';'msyo';'wsyo';'maes';'waes';'wnes';'mmes';'wmes';'mses';
-      'wses']; 
+fams = ['maus';'waus';'wnus';'mmus';'wmus';'msus';'wsus';'mawe';'wawe';
+       'wnwe';'mmwe';'wmwe';'mswe';'wswe';'mayo';'wayo';'wnyo';'mmyo';
+       'wmyo';'msyo';'wsyo';'maes';'waes';'wnes';'mmes';'wmes';'mses';
+       'wses']; 
 text(w(:,1), w(:,2), fams)
 box on
 

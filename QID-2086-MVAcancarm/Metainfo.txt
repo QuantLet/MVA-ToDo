@@ -2,7 +2,7 @@ Name of QuantLet: MVAcancarm
 
 Published in: Applied Multivariate Statistical Analysis
 
-Description: Performs a canonical correlation analysis for the car marks data and shows a plot of the first canonical variables.
+Description: Performs a canonical correlation analysis for the car brands data and shows a plot of the first canonical variables.
 
 Keywords: canonical, canonical-analysis, correlation, plot, graphical representation, canonical-parameter, covariance, covariance-matrix, svd, data visualization, sas
 
@@ -10,8 +10,10 @@ See also: MVAcanus, SMScancarm, SMScancarm1, SMScancarm2, SMScanfood, SMScanus
 
 Author: Zografia Anastasiadou
 Author[SAS]: Svetlana Bykovskaya
+Author[Matlab]: Wolfgang Haerdle, Vladimir Georgescu, Jorge Patron, Song Song
 
-Submitted: Thu, September 11 2014 by Franziska Schulz
-Submitted[SAS]: Wen, April 6 2016 by Svetlana Bykovskaya
+Submitted: Fri, December 16 by Piedad Castro
+Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
+Submitted[Matlab]: Fri, December 16 by Piedad Castro
 
 Datafile: carmean2.dat, carmean2_sas.dat
