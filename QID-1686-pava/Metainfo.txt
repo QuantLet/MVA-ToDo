@@ -1,0 +1,11 @@
+Name of QuantLet: pava
+
+Published in: Applied Multivariate Statistical Analysis
+
+Description: Computes a monotonic regression using pool-adjacent-violators (PAV) algorithm.
+
+See also: MVAcarrankings
+
+Author: Awdesch Melzer
+
+Submitted: Mon, December 16 by Piedad Castro

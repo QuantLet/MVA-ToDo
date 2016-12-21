@@ -10,6 +10,9 @@ See also: MVAportfol_IBM_Ford, MVAportfol_IBM_PanAm
 
 Author: Zografia Anastasiadou
 
+Author[Matlab]: Zografia Anastasiadou, Awdesch Melzer, Piedad Castro
+
 Submitted: Fri, August 05 2011 by Awdesch Melzer
+Submitted[Matlab]: Wed, December 21 2016 by Piedad Castro
 
 Datafile: apple.csv, bac.csv, ed.csv, ford.csv, ibm.csv, ms.csv
