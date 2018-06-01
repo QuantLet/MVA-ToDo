@@ -1,5 +1,7 @@
 Name of Quantlet:	PAVAlgo 
 
+Published in: ''
+
 Description: 'PAVAlgo applies the Pool-Adjacent-Violators Algorithm to an unordered data set and returns the solution. The function is applied to simulated data and the result is graphically illustrated'
 
 Keywords: 'PAV, smoothing, PAV, bivariate, copula, estimation, interpolation, regression, scatterplot'

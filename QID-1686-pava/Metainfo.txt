@@ -4,6 +4,8 @@ Published in: Applied Multivariate Statistical Analysis
 
 Description: Computes a monotonic regression using pool-adjacent-violators (PAV) algorithm.
 
+Keywords: ''
+
 See also: MVAcarrankings
 
 Author: Awdesch Melzer
