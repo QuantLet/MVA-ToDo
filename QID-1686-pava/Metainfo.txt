@@ -4,7 +4,7 @@ Published in: Applied Multivariate Statistical Analysis
 
 Description: Computes a monotonic regression using pool-adjacent-violators (PAV) algorithm.
 
-Keywords: ''
+Keywords: 'pool adjacent violators algorithm, monotonic regression, isotonic, regression'
 
 See also: MVAcarrankings
 
