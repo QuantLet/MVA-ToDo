@@ -10,7 +10,9 @@ Keywords:     spectral clustering, partitioning, proximity, cluster, grouping,
               normalized cut, cut cost, fMRI  
 
 Author:       Awdesch Melzer, Simon Trimborn
+Author[Python]: 'Matthias Fengler, Liudmila Gorkun-Voevoda'
 
 Submited:     Wed, Dec 07 2016 by Piedad Castro
+Submitted[Python]: 'Wed, September 9 2020 by Liudmila Gorkun-Voevoda'
 
 Output:       'Plots of data and the derived clusters'
