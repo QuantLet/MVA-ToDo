@@ -12,7 +12,7 @@ Author: Zografia Anastasiadou
 Author[SAS]: Svetlana Bykovskaya
 Author[Matlab]: Wolfgang Haerdle, Vladimir Georgescu, Jorge Patron, Song Song
 
-Submitted: Fri, December 16 by Piedad Castro
+Submitted: Fri, December 16 2016 by Piedad Castro
 Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
 Submitted[Matlab]: Fri, December 16 by Piedad Castro
 
