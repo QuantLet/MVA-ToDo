@@ -27,7 +27,7 @@ Example:
 - 1: Direction of first component for simulated data.
 - 2: Direction of second component for simulated data.
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
