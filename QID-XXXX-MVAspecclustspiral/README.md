@@ -9,9 +9,9 @@ Name of Quantlet: MVAspecclustspiral
 
 Published in: Applied Multivariate Statistical Analysis
 
-Description: Simulates a spiral dataset and clusters it in four groups by
+Description: Simulates a spiral dataset and clusters it in four groups by means of a spectral clustering algorithm. It plots the simulated data and its clusters
 
-Keywords: spectral clustering, partitioning, proximity, cluster, grouping,
+Keywords: spectral clustering, partitioning, proximity, cluster, grouping, normalized cut, cut cost, fMRI
 
 Author: Awdesch Melzer, Simon Trimborn
 
