@@ -27,7 +27,7 @@ Submitted[Matlab]: Mon, December 12 2016 by Piedad Castro
 
 Datafiles: food.dat
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
