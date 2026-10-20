@@ -15,13 +15,9 @@ Keywords: canonical, canonical-analysis, correlation, plot, graphical representa
 
 See also: MVAcanus, SMScancarm, SMScancarm1, SMScancarm2, SMScanfood, SMScanus
 
-Author: Zografia Anastasiadou
+Author: Zografia Anastasiadou, Svetlana Bykovskaya, Wolfgang Haerdle, Vladimir Georgescu, Jorge Patron, Song Song
 
-Author[SAS]: Svetlana Bykovskaya
-
-Author[Matlab]: Wolfgang Haerdle, Vladimir Georgescu, Jorge Patron, Song Song
-
-Submitted: Fri, December 16 by Piedad Castro
+Submitted: Fri, December 16 2016 by Piedad Castro
 
 Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
 
