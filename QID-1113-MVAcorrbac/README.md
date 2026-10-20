@@ -5,8 +5,6 @@
 </div>
 
 ```
-﻿Name of QuantLet: MVAcorrbac
-
 Published in: Applied Multivariate Statistical Analysis
 
 Description: Performs a correspondence analysis for the baccalaureat data, shows the eigenvalues of the singular value decomposition of the chi-matrix and displays graphically its factorial decomposition.
@@ -15,13 +13,9 @@ Keywords: correspondence-analysis, svd, decomposition, factorial-decomposition, 
 
 See also: MVAcorrCar, MVAcorrEyeHair, MVAcorrcrime, MVAcorrjourn, SMScorrcrime, SMScorrcarm, SMScorrfood, SMScorrhealth
 
-Author: Zografia Anastasiadou
+Author: Zografia Anastasiadou, Svetlana Bykovskaya, Wolfgang K. Härdle, Jorge Patron, Vladimir Georgescu, Song Song
 
-Author[SAS]: Svetlana Bykovskaya
-
-Author[Matlab]: Wolfgang K. Härdle, Jorge Patron, Vladimir Georgescu, Song Song
-
-Submitted: Fri, December 16 by Piedad Castro
+Submitted: Fri, December 16 2016 by Piedad Castro
 
 Submitted[SAS]: Wed, April 06 2016 by Svetlana Bykovskaya
 
