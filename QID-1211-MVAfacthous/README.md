@@ -29,7 +29,7 @@ Example:
 - 3: Factor analysis for Boston housing data, Principal Factor Method (PFM) after varimax rotation.
 - 4: Factor analysis for Boston housing data, Principal Component Method (PCM) after varimax rotation.
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
