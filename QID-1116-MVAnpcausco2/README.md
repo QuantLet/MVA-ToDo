@@ -29,7 +29,7 @@ Submitted[Matlab]: Tue, December 13 2016 by Piedad Castro
 
 Datafile: uscomp2.dat
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
