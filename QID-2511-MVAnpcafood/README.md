@@ -33,7 +33,7 @@ Example:
 - 1: Representation of the individuals.
 - 2: Representation of the variables.
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
