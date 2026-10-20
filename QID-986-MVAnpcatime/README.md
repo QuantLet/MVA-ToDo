@@ -9,7 +9,7 @@ Name of QuantLet: MVAnpcatime
 
 Published in: Applied Multivariate Statistical Analysis
 
-Description: Performs a PCA for the standardized time
+Description: Performs a PCA for the standardized time budget data and shows the first two principal components for the individuals and the variables.
 
 Keywords: principal-components, pca, npca, eigenvalues, standardization, eigenvalue-decomposition, plot, graphical representation, data visualization, sas
 
@@ -33,7 +33,7 @@ Example:
 - 1: Representation of the individuals.
 - 2: Representation of the variables.
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
