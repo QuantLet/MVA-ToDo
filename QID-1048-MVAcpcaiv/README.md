@@ -9,13 +9,11 @@ Name of QuantLet: MVAcpcaiv
 
 Published in: Applied Multivariate Statistical Analysis
 
-Description: Estimates a common principal components model for the implied volatility
+Description: Estimates a common principal components model for the implied volatility data and computes a likelihood ratio test. The computation of the common principal components uses a part of the code of the function "FCPC" that belongs to the R-Package "multigroup" (https://CRAN.R-project.org/package=multigroup).
 
-belongs to the R-Package "multigroup" (https: //CRAN.R-project.org/package=multigroup).
+Keywords: principal-components, pca, eigenvalues, plot, graphical representation, data visualization, common-principal-component, cpc, volatility, implied-volatility, likelihood-ratio-test.
 
-Keywords: principal-components, pca, eigenvalues, plot, graphical representation,
-
-See also: MVAnpcabanki, MVAnpcabank, MVAnpcahousi, MVAnpcatime, MVAnpcafood, MVAnpcausco,
+See also: MVAnpcabanki, MVAnpcabank, MVAnpcahousi, MVAnpcatime, MVAnpcafood, MVAnpcausco, MVAnpcausco2, MVAnpcausco2i, MVApcabank, MVAnpcahous, MVApcabanki, MVApcabankr, MVApcasimu
 
 Author: Piedad Castro
 
@@ -23,7 +21,7 @@ Submitted: Fri, Nov 11 2016 by Piedad Castro
 
 Datafile: XFGvolsurf01.dat, XFGvolsurf02.dat, XFGvolsurf03.dat
 
-Output: Plot of the factor loadings of the first (thick), the second (medium)
+Output: Plot of the factor loadings of the first (thick), the second (medium) and the third (thin) common principal components.
 
 ```
 <div align="center">
