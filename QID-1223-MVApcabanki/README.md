@@ -33,7 +33,7 @@ Example:
 - 1: Relative proportion of variance explained by PCs.
 - 2: First vs Second PC.
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
