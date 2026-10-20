@@ -33,7 +33,7 @@ Example:
 - 1: Scree plot of the eigenvalues for the PCA of the standardized Swiss bank notes.
 - 2: The correlations of the original variables with the PCs.
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
