@@ -5,8 +5,6 @@
 </div>
 
 ```
-﻿Name of QuantLet: MVAnpcausco
-
 Published in: Applied Multivariate Statistical Analysis
 
 Description: Performs a PCA for the standardized US company data, shows the first two principal components and screeplot of the eigenvalues.
@@ -29,7 +27,7 @@ Submitted[Matlab]: Tue, December 13 2016 by Piedad Castro
 
 Datafile: uscomp2.dat
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
