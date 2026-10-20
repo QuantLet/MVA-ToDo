@@ -5,8 +5,6 @@
 </div>
 
 ```
-﻿Name of QuantLet: MVAdisfbank
-
 Published in: Applied Multivariate Statistical Analysis
 
 Description: Performs a Fisher discrimination analysis of the Swiss bank notes, computes the misclassification rates for the whole dataset and displays nonparametric density estimates of the projected data.
