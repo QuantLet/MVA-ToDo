@@ -5,8 +5,6 @@
 </div>
 
 ```
-﻿Name of QuantLet: MVAcorrjourn
-
 Published in: Applied Multivariate Statistical Analysis
 
 Description: Performs a correspondence analysis for the Belgian journal data, shows the eigenvalues of the singular value decomposition of the chi-matrix and displays graphically its factorial decomposition.
@@ -29,7 +27,7 @@ Submitted[Matlab]: Fri, December 16 by Piedad Castro
 
 Datafile: journaux.dat
 
-Note: Matlab and SAS decompose matrices differently than R, and therefore some
+Note: Matlab and SAS decompose matrices differently than R, and therefore some of the eigenvectors may have different signs.
 
 ```
 <div align="center">
