@@ -25,6 +25,6 @@ Submitted[Matlab]: Wed, December 07 2016 by Piedad Castro
 
 Datafile: pullover.dat
 
-Output: Estimated parameters for the restricted and the unrestricted model and
+Output: Estimated parameters for the restricted and the unrestricted model and test statistics for linear restriction and the F-test.
 
 ```
